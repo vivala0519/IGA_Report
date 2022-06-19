@@ -1,22 +1,25 @@
 import { DashboardLayoutComponent } from '@syncfusion/ej2-react-layouts';
-import React from 'react';
-import styled from 'styled-components';
+import * as React from 'react';
+
 import SumOfUsers from './components/SumOfUsers';
 import SumOfCount from './components/SumOfCount';
 import DAU from './components/DAU';
 import PieOfTopReferral from './components/PieOfTopReferral';
 import TableOfTopReferral from './components/TableOfTopRefrerral';
 
-const App = () => {
-  const cellSpacing: number[] = [10, 10];
-  const resize: any[] = [
+export default class App extends React.Component<
+  Record<string, never>,
+  Record<string, never>
+> {
+  private cellSpacing: number[] = [10, 10];
+  private resize: any[] = [
     'e-south-east',
     'e-east',
     'e-west',
     'e-north',
     'e-south',
   ];
-  const panels: any = [
+  private panels: any = [
     {
       sizeX: 6,
       sizeY: 1,
@@ -49,45 +52,43 @@ const App = () => {
       sizeX: 6,
       sizeY: 2,
       row: 3,
-      col: 0,
+      col: 7,
       content: TableOfTopReferral,
     },
   ];
 
-  function onResizeStart() {
+  public onResizeStart() {
     // console.log('Resize start');
   }
   //Dashboard Layout's drag event function
-  function onResize(args: any) {
+  public onResize(args: any) {
     // console.log('Resizing');
   }
 
   //Dashboard Layout's dragstop event function
-  function onResizeStop(args: any) {
+  public onResizeStop(args: any) {
     // console.log('Resize stop');
   }
 
-  return (
-    <PageDiv>
-      <div id="container">
-        <DashboardLayoutComponent
-          id="defaultLayout"
-          cellSpacing={cellSpacing}
-          panels={panels}
-          allowResizing={true}
-          columns={12}
-          resizableHandles={resize}
-          resizeStart={onResizeStart.bind}
-          resize={onResize.bind}
-          resizeStop={onResizeStop.bind}
-        />
+  public render() {
+    return (
+      <div>
+        <div id="container">
+          <DashboardLayoutComponent
+            id="defaultLayout"
+            cellSpacing={this.cellSpacing}
+            panels={this.panels}
+            allowResizing={true}
+            columns={12}
+            cellAspectRatio={50 / 50}
+            resizableHandles={this.resize}
+            resizeStart={this.onResizeStart.bind(this)}
+            resize={this.onResize.bind(this)}
+            resizeStop={this.onResizeStop.bind(this)}
+            style={{ width: '1000px' }}
+          />
+        </div>
       </div>
-    </PageDiv>
-  );
-};
-
-export default App;
-
-const PageDiv = styled.div`
-  width: 1824px;
-`;
+    );
+  }
+}
