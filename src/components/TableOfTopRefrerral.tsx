@@ -1,7 +1,7 @@
 import React from 'react';
 
-function TableOfTopReferral() {
+const TableOfTopReferral = (data: any) => {
   return <div className="content">Top Referral</div>;
-}
+};
 
 export default TableOfTopReferral;

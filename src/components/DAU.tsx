@@ -1,7 +1,7 @@
 import React from 'react';
 
-function DAU() {
+const DAU = (data: any) => {
   return <div className="content">DAU</div>;
-}
+};
 
 export default DAU;
