@@ -1,7 +1,8 @@
 import React from 'react';
+import Table from '../chart/Table';
 
 const TableOfTopReferral = (data: any) => {
-  return <div className="content">Top Referral</div>;
+  return <Table />;
 };
 
 export default TableOfTopReferral;
