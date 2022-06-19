@@ -1,12 +1,9 @@
 import React from 'react';
 import { DataGridPremium } from '@mui/x-data-grid-premium';
-import { useMovieData } from '@mui/x-data-grid-generator';
 import styled from 'styled-components';
 
 const Sum = (props: any) => {
   const { tableData } = props;
-  console.log(useMovieData());
-  console.log(tableData);
   return (
     <SumDiv>
       <Title>Top Referral</Title>

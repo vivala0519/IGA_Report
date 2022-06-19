@@ -1607,7 +1607,7 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
-"@mui/base@5.0.0-alpha.85", "@mui/base@^5.0.0-alpha.80":
+"@mui/base@5.0.0-alpha.85":
   version "5.0.0-alpha.85"
   resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-alpha.85.tgz#e9e19678bf72dae228d0f25d33dfe20462aac833"
   integrity sha512-ONlQJOmQrxmR+pYF9AqH69FOG4ofwzVzNltwb2xKAQIW3VbsNZahcHIpzhFd70W6EIU+QHzB9TzamSM+Fg/U7w==
@@ -1700,19 +1700,7 @@
     prop-types "^15.8.1"
     react-is "^17.0.2"
 
-"@mui/x-data-grid-generator@^5.12.2":
-  version "5.12.2"
-  resolved "https://registry.yarnpkg.com/@mui/x-data-grid-generator/-/x-data-grid-generator-5.12.2.tgz#8e158762bc082cfa2a2e50b08b1f11d49419aa3a"
-  integrity sha512-+lGN6FUVykHgvr+1T2XMxK1kwqRMXBTjyoZ8i1a4fFgYUoxAolhJ162D7q4tIwnsLtxpQzfPC0RVp0UZT2gkaA==
-  dependencies:
-    "@babel/runtime" "^7.17.2"
-    "@mui/base" "^5.0.0-alpha.80"
-    "@mui/x-data-grid-premium" "5.12.2"
-    chance "^1.1.8"
-    clsx "^1.1.1"
-    lru-cache "^7.10.1"
-
-"@mui/x-data-grid-premium@5.12.2", "@mui/x-data-grid-premium@^5.12.2":
+"@mui/x-data-grid-premium@^5.12.2":
   version "5.12.2"
   resolved "https://registry.yarnpkg.com/@mui/x-data-grid-premium/-/x-data-grid-premium-5.12.2.tgz#37c3ca0b246812dee9e10d731289bb69bc5cfae2"
   integrity sha512-2JnV3VEfpv/AnFA72VcS4HN77MGdEHJzu994tJJjtu0C8OzmgdDb2or9YW+qEC52f0mm3zeCcH2KgbTSuYS5/Q==
@@ -3442,11 +3430,6 @@ chalk@^4.0.0, chalk@^4.0.2, chalk@^4.1.0, chalk@^4.1.2:
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
-
-chance@^1.1.8:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/chance/-/chance-1.1.8.tgz#5d6c2b78c9170bf6eb9df7acdda04363085be909"
-  integrity sha512-v7fi5Hj2VbR6dJEGRWLmJBA83LJMS47pkAbmROFxHWd9qmE1esHRZW8Clf1Fhzr3rjxnNZVCjOEv/ivFxeIMtg==
 
 char-regex@^1.0.2:
   version "1.0.2"
@@ -6658,11 +6641,6 @@ lru-cache@^6.0.0:
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
-
-lru-cache@^7.10.1:
-  version "7.10.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.10.1.tgz#db577f42a94c168f676b638d15da8fb073448cab"
-  integrity sha512-BQuhQxPuRl79J5zSXRP+uNzPOyZw2oFI9JLRQ80XswSvg21KMKNtQza9eF42rfI/3Z40RvzBdXgziEkudzjo8A==
 
 lz-string@^1.4.4:
   version "1.4.4"
