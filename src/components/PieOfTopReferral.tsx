@@ -9,25 +9,23 @@ const PieOfTopReferral = () => {
   const labels: any = [];
   const pieData: any = [];
 
-  useEffect(() => {
-    if (data) {
-      const row = data.rows;
-      console.log(row);
-      row.sort((a: any, b: any) => b[1] - a[1]);
-      console.log(row);
-      let temp = 0;
-      for (let i = 0; i < row.length; i += 1) {
-        if (i < 4) {
-          labels.push(row[i][0]);
-          pieData.push(row[i][1]);
-        } else {
-          temp += parseInt(row[i][1]);
-        }
+  // useEffect(() => {
+  if (data) {
+    const row = data.rows;
+    row.sort((a: any, b: any) => b[1] - a[1]);
+    let temp = 0;
+    for (let i = 0; i < row.length; i += 1) {
+      if (i < 4) {
+        labels.push(row[i][0]);
+        pieData.push(row[i][1]);
+      } else {
+        temp += parseInt(row[i][1]);
       }
-      labels.push('etc');
-      pieData.push(temp);
     }
-  }, [data]);
+    labels.push('etc');
+    pieData.push(temp);
+  }
+  // }, [data]);
   return <PiecChart labels={labels} pieData={pieData} />;
 };
 
